@@ -16,3 +16,7 @@ end
 get "/hire_this_brogrammer" do
   erb :hire_this_brogrammer
 end
+
+get "/quitter" do
+  erb :quitter
+end
