@@ -4,21 +4,15 @@
 
 <div>
   <% if @answer == "fail" %>
-    <p><%= "This is must be embarassing for you, but you answered incorrectly. Feel free to try again but I think we both know you aren't a fit here..." %></p>
+    <p><%= "This must be embarassing for you, but you clicked the button we told you not to click. Feel free to try again, but..." %></p>
   <% end %>
 </div>
 
 <div>
-  <a href="/survey_form?answer=fail"><button type="submit" class="button" name="survey">Do no click, click button to the bottom</button></a>
-</div>
-<div>
-  <a href="/survey_form?answer=fail"><button type="submit" class="button" name="survey">Do no click, click button to the right</button></a>
-  <a href="/survey_form?answer=fail"><button type="submit" class="button" name="survey">Do no click, click button to the left</button></a>
-</div>
-<div>
-  <a href="/survey_form?answer=fail"><button type="submit" class="button" name="survey">Do no click, click button to the top</button></a>
+  <a href="/survey_form?answer=fail"><button type="submit" class="button" name="survey">Do not click, click button to the right</button></a>
+  <a href="/survey_form?answer=fail"><button type="submit" class="button" name="survey">Do not click, click button to the left</button></a>
 </div>
 
-<div>
+<div style="position: absolute; bottom: 0px;">
   <a href="/hire_this_brogrammer" style="color:white">You solved the puzzle! Good for you!</a>
 </div>

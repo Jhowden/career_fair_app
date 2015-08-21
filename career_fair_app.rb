@@ -12,3 +12,7 @@ get "/survey_form" do
   @answer = params["answer"]
   erb :survey_form
 end
+
+get "/hire_this_brogrammer" do
+  erb :hire_this_brogrammer
+end
